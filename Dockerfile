@@ -29,5 +29,5 @@ RUN npm install -g serve
 # Quasar typically outputs dist/spa (unless configured differently)
 COPY --from=build /app/dist/spa ./dist
 
-EXPOSE 3000
-CMD ["serve", "-s", "dist", "-l", "3000"]
+EXPOSE 30023
+CMD ["serve", "-s", "dist", "-l", "30023"]

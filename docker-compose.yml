@@ -6,6 +6,6 @@ services:
       dockerfile: Dockerfile
     container_name: piglmayer-dev
     ports:
-      - '3000:3000'
+      - '30023:30023'
     environment:
       - NODE_ENV=development
