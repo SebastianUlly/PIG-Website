@@ -1,0 +1,11 @@
+services:
+  # Development service
+  piglmayer-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: piglmayer-dev
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development

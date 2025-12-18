@@ -1,81 +1,52 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
+    <q-header v-if="!isSmallScreen" elevated class="bg-white flex row no-wrap items-center justify-center"
+      :style="{ height: headerHeight, transition: 'height 0.5s ease' }">
+      <directory />
+      {{ userStore.getUser }}
+      <!-- <useraccount style="position: absolute; right: 30px; top: 20px;" user-name=""
+        :user-email="userStore.getUser?.email ?? ''" avatar-url="" :show-theme-toggle="true" @profile="goToProfile"
+        @account-settings="goToAccountSettings" @toggle-theme="toggleTheme" @logout="logout" /> -->
     </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
-      <q-list>
-        <q-item-label header> Essential Links </q-item-label>
-
-        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
-      </q-list>
-    </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+    <Footer_comp v-if="!isSmallScreen" />
+    <moblieFooter v-else @profile="goToProfile" @account-settings="goToAccountSettings" @toggle-theme="toggleTheme"
+      @logout="logout" />
   </q-layout>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink.vue';
+import { ref, computed } from 'vue';
+import directory from 'src/components/directory.vue';
+// import useraccount from 'src/components/userAccount.vue';
+import Footer_comp from 'src/components/footer.vue';
+import { useQuasar } from 'quasar'
+import { useUserStore } from 'src/stores/user-store';
+import moblieFooter from 'src/components/mobileFooter.vue';
 
-const linksList: EssentialLinkProps[] = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev',
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework',
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev',
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev',
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev',
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev',
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev',
-  },
-];
+const isSmallScreen = computed(() => $q.screen.lt.md);
+const isScrolled = ref(false);
+const headerHeight = ref(isScrolled.value ? '80px' : '80px');
 
-const leftDrawerOpen = ref(false);
+const userStore = useUserStore()
+const $q = useQuasar()
 
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value;
+function goToProfile() {
+  console.log('Go to profile page');
+}
+
+function goToAccountSettings() {
+  console.log('Go to account settings page');
+}
+
+function toggleTheme() {
+  $q.dark.toggle()
+}
+
+function logout() {
+  // your logout logic (API call, store reset, etc.)
 }
 </script>

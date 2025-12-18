@@ -1,0 +1,138 @@
+/* ----------------------------------------------------
+   QUASAR VARIABLES
+   This file is automatically included by Quasar.
+   Only override what you actually use.
+---------------------------------------------------- */
+
+/* ========== COLORS ========== */
+
+$primary: black;
+$secondary: white;
+$accent: #9c27b0;
+
+$dark: #1d1d1d;
+$dark-page: #121212;
+
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+
+/* ========== TYPOGRAPHY ========== */
+
+$typography-font-family:
+  'Inter',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  'Fira Sans',
+  'Droid Sans',
+  'Helvetica Neue',
+  sans-serif;
+
+$body-font-size: 16px;
+$body-line-height: 1.6;
+
+$h1: (
+  size: 3rem,
+  line-height: 3.5rem,
+  letter-spacing: -0.01562em,
+  weight: 300,
+);
+$h2: (
+  size: 2.125rem,
+  line-height: 2.5rem,
+  letter-spacing: -0.00833em,
+  weight: 300,
+);
+$h3: (
+  size: 1.5rem,
+  line-height: 2rem,
+  letter-spacing: normal,
+  weight: 400,
+);
+$h4: (
+  size: 1.25rem,
+  line-height: 1.75rem,
+  letter-spacing: 0.00735em,
+  weight: 400,
+);
+$h5: (
+  size: 1rem,
+  line-height: 1.5rem,
+  letter-spacing: normal,
+  weight: 400,
+);
+$h6: (
+  size: 0.875rem,
+  line-height: 1.25rem,
+  letter-spacing: 0.0125em,
+  weight: 500,
+);
+
+/* ========== BORDER RADIUS ========== */
+
+$generic-border-radius: 8px;
+$button-border-radius: 8px;
+$input-border-radius: 8px;
+$card-border-radius: 12px;
+
+/* ========== SPACING ========== */
+
+// $space-base: 16px;
+// $space-xs: 4px;
+// $space-sm: 8px;
+// $space-md: 16px;
+// $space-lg: 24px;
+// $space-xl: 32px;
+
+/* ========== SHADOWS ========== */
+
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+$elevation-1:
+  0 1px 3px rgba(0, 0, 0, 0.12),
+  0 1px 2px rgba(0, 0, 0, 0.24);
+$elevation-4:
+  0 4px 6px rgba(0, 0, 0, 0.14),
+  0 2px 4px rgba(0, 0, 0, 0.12);
+$elevation-8:
+  0 8px 10px rgba(0, 0, 0, 0.16),
+  0 3px 14px rgba(0, 0, 0, 0.12);
+$elevation-12:
+  0 12px 17px rgba(0, 0, 0, 0.19),
+  0 5px 22px rgba(0, 0, 0, 0.14);
+
+/* ========== BUTTONS ========== */
+
+$button-padding: 8px 16px;
+$button-min-height: 40px;
+$button-font-size: 0.875rem;
+$button-font-weight: 500;
+$button-border-width: 1px;
+
+/* ========== INPUTS ========== */
+
+$field-height: 40px;
+$field-padding: 8px 12px;
+$field-font-size: 0.875rem;
+$field-label-font-size: 0.75rem;
+
+/* ========== LAYOUT ========== */
+
+$layout-min-width: 320px;
+$layout-max-width: 1440px;
+$header-height: 64px;
+$footer-height: 56px;
+
+/* ========== Z-INDEX SCALE ========== */
+
+$z-fab: 990;
+$z-notify: 2000;
+$z-fullscreen: 6000;
+$z-menu: 3000;
+$z-tooltip: 9000;

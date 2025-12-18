@@ -1,0 +1,27 @@
+.image-card {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive image */
+.image {
+  width: 100%;
+  max-width: 260px; // good default in your grid, adjust if needed
+  border-radius: 8px;
+}
+
+/* Mobile: allow full width */
+@media (max-width: 600px) {
+  .image {
+    max-width: 100%;
+  }
+}
+
+/* Title area padding adjustments */
+.title {
+  padding: 16px;
+
+  @media (max-width: 599px) {
+    padding: 6px;
+  }
+}
