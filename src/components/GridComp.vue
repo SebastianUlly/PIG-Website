@@ -62,21 +62,9 @@ defineProps<{
   /* mobile */
 }
 
-@media (min-width: 600px) {
-  .masonry {
-    column-count: 2;
-  }
-}
-
 @media (min-width: 1024px) {
   .masonry {
     column-count: 5;
-  }
-}
-
-@media (min-width: 1440px) {
-  .masonry {
-    column-count: 4;
   }
 }
 
