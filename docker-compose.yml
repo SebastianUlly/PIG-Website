@@ -1,6 +1,6 @@
 services:
   # Development service
-  piglmayer-website-dev:
+  piglmayer-website-prod:
     build:
       context: .
       dockerfile: Dockerfile
