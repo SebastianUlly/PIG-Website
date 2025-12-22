@@ -2,7 +2,7 @@
   "name": "pig-website",
   "version": "0.0.1",
   "description": "The Piglmayer Website",
-  "productName": "PIG-Website",
+  "productName": "Piglmayer",
   "author": "SebastianUlly <s.ully@bocom.at>",
   "type": "module",
   "private": true,
