@@ -45,6 +45,30 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
+    path: '/bilder/karikaturen',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/KarikaturenPage.vue') }],
+    meta: {
+      title: 'Pilgmayer',
+    },
+  },
+  {
+    path: '/bilder/federzeichnungen',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/FederzeichnungenPage.vue') }],
+    meta: {
+      title: 'Pilgmayer',
+    },
+  },
+  {
+    path: '/bilder/franz-piglmayer',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/FranzPiglmayerPage.vue') }],
+    meta: {
+      title: 'Pilgmayer',
+    },
+  },
+  {
     path: '/impressum',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/ImpressumPage.vue') }],

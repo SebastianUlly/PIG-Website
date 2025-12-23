@@ -10,6 +10,7 @@
     </q-header>
 
     <q-page-container>
+      <InfoComp v-if="isSmallScreen" />
       <router-view />
     </q-page-container>
     <Footer_comp v-if="!isSmallScreen" />
@@ -26,6 +27,7 @@ import Footer_comp from 'src/components/footer.vue';
 import { useQuasar } from 'quasar'
 import { useUserStore } from 'src/stores/user-store';
 import moblieFooter from 'src/components/mobileFooter.vue';
+import InfoComp from 'src/components/infoComp.vue'
 
 const isSmallScreen = computed(() => $q.screen.lt.md);
 const isScrolled = ref(false);
