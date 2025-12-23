@@ -137,7 +137,7 @@ onMounted(async () => {
   }
 
   .page-container {
-    padding: 0 8px;
+    padding: 0 8px 800px 8px;
   }
 }
 </style>

@@ -42,6 +42,7 @@ defineProps<{
 @media (max-width: 600px) {
   .image-card {
     width: 100%;
+    height: auto;
     // max-height: 150px;
     /* let content define height */
     flex-direction: column;
@@ -60,7 +61,7 @@ defineProps<{
 
 .box {
   width: 40%;
-  height: 100%;
+  // height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +69,7 @@ defineProps<{
 
   @media (max-width: 600px) {
     width: 100%;
-    height: 100px;
+    // height: 100px;
     /* let content define height */
     // padding: 8px 0;
     border: none;
@@ -94,7 +95,7 @@ defineProps<{
 
 
   @media (max-width: 599px) {
-    padding: 6px;
+    padding: 16px 6px;
     font-size: 1rem;
     line-height: 1.3rem;
     font-weight: bold;

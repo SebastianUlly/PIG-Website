@@ -2,9 +2,9 @@
   <q-banner v-if="visible" class="bg-primary text-white q-pa-md" inline-actions>
     <div class="row items-center no-wrap full-width">
       <div class="col">
-        Falls Sie Bilder von '$Piglmayer' haben und diese uns zusenden möchten dann scannen Sie diese bitte mit der <a
-          href="#" @click.prevent="redirectToStore">Fotoscanner
-          App von Google</a> ein.
+        Wenn Sie Fotos besitzen, die auf dieser Webseite gezeigt werden sollen, scannen Sie diese bitte <a href="#"
+          @click.prevent="redirectToStore">hiermit</a> ein und kontaktieren Sie uns per E-Mail:
+        <a>kontakt@piglmayer.at</a>.
       </div>
 
       <q-btn flat dense round icon="close" @click="close" aria-label="Close notification" />
@@ -38,3 +38,10 @@ function redirectToStore() {
   // }
 }
 </script>
+
+<style lang="scss" scoped>
+a {
+  color: white;
+  text-decoration: underline;
+}
+</style>

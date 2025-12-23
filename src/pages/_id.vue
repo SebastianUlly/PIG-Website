@@ -368,6 +368,12 @@ const items = [
   },
   // Biographien
   {
+    id: "03625e41-484b-4450-8b6d-2e40fdd7ea28",
+    title: "SR Franz Piglmayer",
+    image: "/img/piglmayer-person/GZNAE7180.jpeg",
+    text: "<p>*17. April 1923 in St. Gotthard im Mühlviertel</p><p>†21. Juli 2002 in Senftenbach</p><p>Österreichischer Werbegrafiker, Kalligraph, Schaufenster-Dekorateur, Bühnenbildner, Berufsschullehrer, Vortragender im WIFI, Maler im Stil des Naturalismus (Aquarelle und Federzeichnungen)</p>",
+  },
+  {
     id: "1cb9b89c-37e2-4ea0-8042-7562aabc693f",
     title: "Leben und beruflicher Werdegang",
     image: "/img/piglmayer-person/ELYWE9972.jpeg",
@@ -377,7 +383,7 @@ const items = [
     id: "d8e0e890-b501-4d9a-89ae-e5010144faf4",
     title: "Künstlerischer Werdegang",
     image: "/img/aquarell/BHDZE4738.jpeg",
-    text: '<p>Bereits in der Volksschule in Urfahr erkannten die Lehrer sein zeichnerisches Talent und seine Werke wurden auch ausgestellt.</p><p>Während des zweiten Weltkriegs erhielt er ein Stipendium für die „Meisterschule für Grafik und Buchgewerbe" in Berlin. In dieser Zeit zeichnete er Karikaturen für die „Nordland-Zeitung".</p><p>Seine profunde Ausbildung in der Kalligraphie und Grafik bildete er stets weiter und sie fand Anerkennung in zahlreichen Arbeiten.</p><p>Seine ersten Kontakte zur bildnerischen Kunst knüpfte SR Piglmayer durch seinen erlernten Beruf eines Werbegrafikers und Dekorateurs. Er hat sich sein Können autodidaktisch angeeignet. Seit den 70er Jahren widmete er sich der<strong>Aquarellmalerei</strong>und der<strong>Federzeichnung</strong>und stellte seine Werke 1980 erstmals der Öffentlichkeit vor.</p><p>Es folgten weitere Ausstellungen, vorwiegend in seiner Wahlheimat, dem Innviertel, und 1989 erstmals auch in Linz.</p><p>Er bevorzugt Aquarell und Radierung. Aquarelle sind seine Leidenschaft. Er war verliebt in das Innviertel – in seine schönen Landschaften. Er wollte und konnte die Natur in seinen Bildern auch nur so einfangen, wie ER sie sah: lieblich, romantisch, natürlich. Seine Bilder sollen uns das Schöne und Unbeschwerte in unserem Innviertel zeigen. Als gelernter Grafiker ging er bei seinen Bildern auch sehr ins Detail.</p><p>Aus seinen Aquarellen spricht der freudige und das Leben bejahende Mensch.</p><p>Sein Lebensmotto: Das Leben positiv sehen und Liebe und Freude schenken. Jemandem mit seinen Werken Freude zu bereiten, war ihm sehr wichtig. Dabei stand das Ideelle vor dem Materiellen. Die Anerkennung sollte im Vordergrund stehen!</p>'
+    text: '<p>Bereits in der Volksschule in Urfahr erkannten die Lehrer sein zeichnerisches Talent und seine Werke wurden auch ausgestellt.</p><p>Während des zweiten Weltkriegs erhielt er ein Stipendium für die „Meisterschule für Grafik und Buchgewerbe" in Berlin. In dieser Zeit zeichnete er Karikaturen für die „Nordland-Zeitung".</p><p>Seine profunde Ausbildung in der Kalligraphie und Grafik bildete er stets weiter und sie fand Anerkennung in zahlreichen Arbeiten.</p><p>Seine ersten Kontakte zur bildnerischen Kunst knüpfte SR Piglmayer durch seinen erlernten Beruf eines Werbegrafikers und Dekorateurs. Er hat sich sein Können autodidaktisch angeeignet. Seit den 70er Jahren widmete er sich der <strong>Aquarellmalerei</strong> und der <strong>Federzeichnung</strong> und stellte seine Werke 1980 erstmals der Öffentlichkeit vor.</p><p>Es folgten weitere Ausstellungen, vorwiegend in seiner Wahlheimat, dem Innviertel, und 1989 erstmals auch in Linz.</p><p>Er bevorzugt Aquarell und Radierung. Aquarelle sind seine Leidenschaft. Er war verliebt in das Innviertel – in seine schönen Landschaften. Er wollte und konnte die Natur in seinen Bildern auch nur so einfangen, wie ER sie sah: lieblich, romantisch, natürlich. Seine Bilder sollen uns das Schöne und Unbeschwerte in unserem Innviertel zeigen. Als gelernter Grafiker ging er bei seinen Bildern auch sehr ins Detail.</p><p>Aus seinen Aquarellen spricht der freudige und das Leben bejahende Mensch.</p><p>Sein Lebensmotto: Das Leben positiv sehen und Liebe und Freude schenken. Jemandem mit seinen Werken Freude zu bereiten, war ihm sehr wichtig. Dabei stand das Ideelle vor dem Materiellen. Die Anerkennung sollte im Vordergrund stehen!</p>'
   },
   {
     id: "c9d30223-bd20-4a95-80b7-e2d7029df858",
@@ -500,10 +506,10 @@ const data = computed(() => {
   }
 
   .h1_title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.2;
-    padding: 0 0 6px 0;
+    padding: 6px 0 6px 0;
   }
 
   .h2_title {
@@ -539,5 +545,26 @@ h2 {
 .exhibition-description {
   font-size: 1.2rem;
   margin: 0;
+}
+
+
+@media (max-width: 600px) {
+  .timeline-item {
+    padding: 0 8px 0 15px;
+  }
+
+  .exhibition-date {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  .exhibition-description {
+    font-size: 0.95rem;
+  }
 }
 </style>
