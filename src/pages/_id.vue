@@ -366,6 +366,37 @@ const items = [
     image: "/img/piglmayer-person/UANSE7390.jpeg",
     text: ""
   },
+  // Biographien
+  {
+    id: "1cb9b89c-37e2-4ea0-8042-7562aabc693f",
+    title: "Leben und beruflicher Werdegang",
+    image: "/img/piglmayer-person-photos/ELYWE9972.jpeg",
+    text: '<p>Nach Absolvierung der Pflichtschule in Linz-Urfahr erlernte er den Beruf eines Großhandels-Kaufmannes bei der Firma „EKO" in Linz Während seiner Militärzeit (1941 – 1945) besuchte er die Meisterschule für Grafik und Buchgewerbe, Fachabteilung Gebrauchsgrafik in Berlin.</p><p>Bis 1947 übte er in Linz den Beruf des <strong>Bühnenbildners bei der Mühlviertler Volksbühne</strong> und den Beruf des <strong>Grafikers beim Orchideen-Verlag in LINZ/Urfahr</strong> aus.</p><p>Von August 1947 bis 1955 war er als <strong>Selbstständiger Werbegrafiker und Schaufenster-Dekorateur</strong> für viele oberösterreichische Firmen tätig.</p><p>Als <strong>Vortragender im WIFI</strong> lehrte er die Kalligrafie und die Schaufensterdekoration.</p><p>1961 startete er auf Wunsch der OÖ. Handelskammer, Gremium Textilhandel, einen Schulversuch für <strong>„Schaufenstergestaltung" an der Berufsschule in Ried</strong>, der in das Regelschulsystem übernommen wurde. Bis 1983 unterrichtete er den Gegenstand „Werbetechnik" <strong>an der Berufsschule in Ried im Innkreis</strong>.</p><p>1974 übersiedelte er von Linz nach Senftenbach, Bezirk Ried. Für seine neue Heimatgemeinde profilierte er sich als <strong>ehrenamtlicher Werbegrafiker</strong> für alle Vereine von Senftenbach und für die der umliegenden Gemeinden.</p>'
+  },
+  {
+    id: "d8e0e890-b501-4d9a-89ae-e5010144faf4",
+    title: "Künstlerischer Werdegang",
+    image: "/img/aquarell/BHDZE4738.jpeg",
+    text: '<p>Bereits in der Volksschule in Urfahr erkannten die Lehrer sein zeichnerisches Talent und seine Werke wurden auch ausgestellt.</p><p>Während des zweiten Weltkriegs erhielt er ein Stipendium für die „Meisterschule für Grafik und Buchgewerbe" in Berlin. In dieser Zeit zeichnete er Karikaturen für die „Nordland-Zeitung".</p><p>Seine profunde Ausbildung in der Kalligraphie und Grafik bildete er stets weiter und sie fand Anerkennung in zahlreichen Arbeiten.</p><p>Seine ersten Kontakte zur bildnerischen Kunst knüpfte SR Piglmayer durch seinen erlernten Beruf eines Werbegrafikers und Dekorateurs. Er hat sich sein Können autodidaktisch angeeignet. Seit den 70er Jahren widmete er sich der <strong>Aquarellmalerei</strong> und der <strong>Federzeichnung</strong> und stellte seine Werke 1980 erstmals der Öffentlichkeit vor.</p><p>Es folgten weitere Ausstellungen, vorwiegend in seiner Wahlheimat, dem Innviertel, und 1989 erstmals auch in Linz.</p>'
+  },
+  {
+    id: "c9d30223-bd20-4a95-80b7-e2d7029df858",
+    title: "Persönliches",
+    image: "/img/signature.webp",
+    text: '<p>Franz Piglmayer wurde als Sohn des Herrn Franz Piglmayer, Friseurgeselle und seiner Frau Katharina, geborene Kocetkova in St. Gotthard, Oberstraß 28 geboren. Im Lazarett in der Nähe von Moskau lernten sich seine Eltern kennen, wo seine Mutter als Krankenschwester tätig war. Sie heirateten noch in Russland 1920 kehrten sie nach Österreich zurück.</p><p>Seine Kindheit und Jugend verbrachte er in Linz. Von 1941 bis 1945 war er Soldat der deutschen Wehrmacht. In dieser Zeit absolvierte er die Schule für Gebrauchsgrafik in Berlin.</p><p>Nach Kriegsende kehrte er nach Linz zurück. In erster Ehe war er mit Gertrude Wais verheiratet. Aus dieser Ehe stammt ein Sohn, Dipl. Ing. Dr. Klaus Piglmayer. In zweiter Ehe war er mit Irma Progli verheiratet.</p><p>Durch seinen Berufswechsel wurde das Innviertel seine zweite Heimat und 1975 zog er nach Senftenbach. Am 21. Juli 2002 verstarb er dort.</p>'
+  },
+  {
+    id: "2407e3e4-f796-4ee0-84c0-5e6b64ef68a4",
+    title: "Auszeichnungen",
+    image: "/img/signature.webp",
+    text: ''
+  },
+  {
+    id: "60cd2342-a822-4eef-8acf-c98b77fe2974",
+    title: "Austellungen",
+    image: "/img/signature.webp",
+    text: ''
+  },
 ]
 
 const data = computed(() => {
