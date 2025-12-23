@@ -3,7 +3,7 @@
     <div class="row items-center no-wrap full-width">
       <div class="col">
         Falls Sie Bilder von '$Piglmayer' haben und diese uns zusenden möchten dann scannen Sie diese bitte mit der <a
-          href="https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner&hl=de">Fotoscanner
+          href="#" @click.prevent="redirectToStore">Fotoscanner
           App von Google</a> ein.
       </div>
 
@@ -19,5 +19,22 @@ const visible = ref(true)
 
 function close() {
   visible.value = false
+}
+
+
+function redirectToStore() {
+  // const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+  // if (/android/i.test(ua)) {
+  window.location.href =
+    "https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner";
+  // } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+  //   window.location.href =
+  //     "https://apps.apple.com/at/app/fotoscanner-von-google-fotos/id1165525994";
+  // } else {
+  //   // Optional fallback (desktop)
+  //   window.location.href =
+  //     "https://www.google.com/photos/scan/";
+  // }
 }
 </script>

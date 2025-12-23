@@ -1,38 +1,21 @@
 <template>
-  <!-- <q-header elevated class="bg-white flex column no-wrap items-center justify-center"
-    :style="{ height: headerHeight, transition: 'height 0.5s ease' }"> -->
-  <!-- <Transition name="fade"> -->
-
-  <!-- <q-img v-else width="150px" src="/img/signature.webp" alt="Franz Piglmayer" /> -->
-  <!-- </Transition> -->
-  <!-- <div v-if="!isSmallScreen" class="flex flex-row items-center align-center">
-      <q-btn v-for="menuItem in newMenuItems" :key="menuItem.id" flat class="text-secondary q-my-md custom-btn-text"
-        :label="menuItem.name" @click="handleItemClick(menuItem)" />
-    </div>
-    <div v-else style="width: 100%" class="flex justify-between items-center">
-      <div class="w-56"></div>
-      <q-btn class="q-mr-sm q-my-md text-primary w-56" flat @click="drawer = !drawer" round dense icon="menu" />
-    </div>
-  </q-header> -->
-  <!-- <Transition name="fade">
-    <q-img v-if="isScrolled" class="logo_small cursor-pointer" src="/img/signature.webp" alt="Franz Piglmayer Signatur"
-      @click="router.push('/')" />
-    <q-img v-else width="150px" src="/img/signature.webp" alt="Franz Piglmayer" />
-  </Transition> -->
   <q-img class="logo_small cursor-pointer" src="/img/signature.webp" alt="Franz Piglmayer" @click="router.push('/')" />
   <div class="flex flex-row items-center align-center">
     <q-btn v-for="menuItem in newMenuItems" :key="menuItem.id" flat class="text-primary q-my-md custom-btn-text"
       :label="menuItem.name" @click="handleItemClick(menuItem)">
-      <q-menu>
-        <div v-if="menuItem.children && menuItem.children.length > 0" class="row no-wrap q-pa-sm">
-          <q-item v-for="child in menuItem.children" :key="child.id" clickable v-ripple class="text-primary">
+      <q-menu v-if="menuItem.children?.length" anchor="bottom middle" self="top middle" fit
+        :max-height="$q.screen.lt.md ? '60vh' : '70vh'" style="min-width: 220px; max-width: 90vw;">
+        <q-list padding>
+          <q-item v-for="child in menuItem.children" :key="child.id" clickable v-close-popup
+            @click="handleItemClick(child)" class="text-primary">
             <q-item-section>
-              <q-item-label @click="handleItemClick(child)">{{ child.name }}</q-item-label>
+              <q-item-label>{{ child.name }}</q-item-label>
             </q-item-section>
           </q-item>
-        </div>
+        </q-list>
       </q-menu>
     </q-btn>
+
   </div>
 </template>
 <script setup lang="ts">
