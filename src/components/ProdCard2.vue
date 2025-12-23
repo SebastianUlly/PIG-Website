@@ -50,7 +50,7 @@ defineProps<{
   font-size: 1.2rem;
   font-weight: bold;
   color: black;
-  background: rgba(211, 211, 211, 0.5);
+  background: rgba(211, 211, 211, 0.7);
   width: 80%;
 
 
