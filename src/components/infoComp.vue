@@ -4,7 +4,7 @@
       <div class="col">
         Wenn Sie Fotos besitzen, die auf dieser Webseite gezeigt werden sollen, scannen Sie diese bitte <a href="#"
           @click.prevent="redirectToStore">hiermit</a> ein und kontaktieren Sie uns per E-Mail:
-        <a>kontakt@piglmayer.at</a>.
+        <a href="mailto:kontakt@piglmayer.at">kontakt@piglmayer.at</a>.
       </div>
 
       <q-btn flat dense round icon="close" @click="close" aria-label="Close notification" />
@@ -23,19 +23,19 @@ function close() {
 
 
 function redirectToStore() {
-  // const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-  // if (/android/i.test(ua)) {
-  window.location.href =
-    "https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner";
-  // } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-  //   window.location.href =
-  //     "https://apps.apple.com/at/app/fotoscanner-von-google-fotos/id1165525994";
-  // } else {
-  //   // Optional fallback (desktop)
-  //   window.location.href =
-  //     "https://www.google.com/photos/scan/";
-  // }
+  const ua = navigator.userAgent || navigator.vendor;
+  console.log(ua);
+  if (/android/i.test(ua)) {
+    window.location.href =
+      "https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner";
+  } else if (/iPad|iPhone|iPod/.test(ua)) {
+    window.location.href =
+      "https://apps.apple.com/at/app/fotoscanner-von-google-fotos/id1165525994";
+  } else {
+    // Optional fallback (desktop)
+    window.location.href =
+      "https://www.google.com/photos/scan/";
+  }
 }
 </script>
 
