@@ -23,8 +23,9 @@ function close() {
 
 
 function redirectToStore() {
+  // Get user agent string
   const ua = navigator.userAgent || navigator.vendor;
-  console.log(ua);
+  // Detect platform and redirect accordingly
   if (/android/i.test(ua)) {
     window.location.href =
       "https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner";

@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://grzfiyzkylmsgyjpmkav.supabase.co';
+const supabaseUrl = 'https://supabase-piglmayer.levelling.app';
 const supabasePublishableKey =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdyemZpeXpreWxtc2d5anBta2F2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQwMTM5NDEsImV4cCI6MjA3OTU4OTk0MX0.VpadddB4rSgXcwPMa5QAgTZvpWMmqTimCzAUrlaRPVw';
+  'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4MTY5MzEwMCwiZXhwIjo0OTM3MzY2NzAwLCJyb2xlIjoiYW5vbiJ9.lAeueM50Te_JtAWP3OK7f1rKUboOhhVdbWFh2n7wCkA';
 
 export const supabase = createClient(supabaseUrl, supabasePublishableKey);
